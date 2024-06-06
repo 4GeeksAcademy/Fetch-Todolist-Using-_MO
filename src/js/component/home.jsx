@@ -72,7 +72,7 @@ const Home = () => {
     };
 
     const deleteTodo = (indexToDelete) => {
-        const newTodos = todos.filter((_, index) => index !== indexToDelete);
+        const newTodos = todos.filter((index) => index !== indexToDelete);
         updateTodos(newTodos);
     };
 
